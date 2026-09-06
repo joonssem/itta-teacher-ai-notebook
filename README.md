@@ -1,8 +1,40 @@
-# 잇다
+# 잇다 (Itta)
 
 교사가 기록할수록 진화하는 개인 AI 교무수첩입니다.
 
-현재 버전은 입력 중심 첫 화면과 더 빠른 기록·요약 탐색을 제공하는 `0.28.0` 시험판입니다.
+수업, 학생 생활지도, 상담, 프로젝트와 교사 성찰을 날짜별 Markdown 기록으로 남기고, 기록을 검색·정리·연결해 다음 수업과 실천으로 이어지도록 돕는 Windows 데스크톱 앱입니다.
+
+> 현재 버전: `0.28.0` 시험판  
+> 저장소: [joonssem/itta-teacher-ai-notebook](https://github.com/joonssem/itta-teacher-ai-notebook)
+
+## 빠른 시작
+
+### Windows 설치 파일
+
+`out/make/squirrel.windows/x64/IttaSetup-0.28.0.exe`를 실행합니다. 앱 첫 실행 시 `문서/잇다`를 기본 저장 위치로 사용하거나 원하는 폴더를 직접 선택할 수 있습니다.
+
+### 소스에서 실행
+
+필요 환경은 Windows, Node.js, pnpm입니다.
+
+```powershell
+pnpm install
+pnpm start
+```
+
+## 핵심 기능 요약
+
+- 한글 교실 기록 작성·수정·검색과 날짜별 UTF-8 Markdown 저장
+- 월간 캘린더, 최근 기록, 카테고리 및 의미 검색
+- 주제 관리와 기록·정리 문서 간 양방향 연결
+- 주간·월간·분기·학기·연간 교무수첩 및 프로젝트 정리
+- PDF·DOCX·HWPX·Markdown·텍스트 교육자료의 로컬 검색과 근거 연결
+- Upstage Solar·Google Gemini 선택형 AI 정리
+- 개인정보 후보 로컬 탐지와 AI 전송 전 비식별화 미리보기
+- 교사가 수정·채택한 결과만 Markdown·SQLite에 저장
+- 자동 백업, 무결성 검사, 안전한 복원
+
+AI 기능은 선택 사항이며, API 키 없이도 기록 작성·로컬 검색·백업 기능을 사용할 수 있습니다.
 
 ## 지금 할 수 있는 것
 
